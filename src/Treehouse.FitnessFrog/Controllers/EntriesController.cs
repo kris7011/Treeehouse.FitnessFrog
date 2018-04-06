@@ -58,7 +58,7 @@ namespace Treehouse.FitnessFrog.Controllers
             // then make sure that the duration is greater than "0".
             if (ModelState.IsValidField("Duration") && entry.Duration <= 0)
             {
-                ModelState.AddModelError("Duration", "The Duration field value must be grater than '0'");
+                ModelState.AddModelError("Duration", "Værdiernes varighed skal være større end '0'");
             }
 
             if (ModelState.IsValid)
