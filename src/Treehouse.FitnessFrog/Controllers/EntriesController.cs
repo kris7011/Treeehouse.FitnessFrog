@@ -60,6 +60,8 @@ namespace Treehouse.FitnessFrog.Controllers
             {
                 entriesRepository.AddEntry(entry);
 
+                TempData["Message"] = "Din indtastning blev tilføjet!";
+
                 return RedirectToAction("Index");
             }
 
@@ -96,6 +98,8 @@ namespace Treehouse.FitnessFrog.Controllers
             {
                 entriesRepository.UpdateEntry(entry);
 
+                TempData["Message"] = "Din indtastning blev opdateret!";
+
                 return RedirectToAction("Index");
             }
 
@@ -125,6 +129,8 @@ namespace Treehouse.FitnessFrog.Controllers
         public ActionResult Delete(int id)
         {
             entriesRepository.DeleteEntry(id);
+
+            TempData["Message"] = "Din indtastning blev slettet!";
 
             return RedirectToAction("Index");
         }
