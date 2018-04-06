@@ -37,7 +37,7 @@ namespace Treehouse.FitnessFrog.Models
         /// <param name="intensity">The intensity for the entry.</param>
         /// <param name="exclude">Whether or not the entry should be excluded when calculating the total fitness activity.</param>
         /// <param name="notes">The notes for the entry.</param>
-        public Entry(int id, int year, int month, int day, Activity.ActivityType activityType, 
+        public Entry(int id, int year, int month, int day, Activity.ActivityType activityType,
             double duration, IntensityLevel intensity = IntensityLevel.Medium,
             bool exclude = false, string notes = null)
         {
